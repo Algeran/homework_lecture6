@@ -1,6 +1,6 @@
 package otus.springfreamwork.homework_lecture6.com.shell;
 
-import org.h2.tools.Console;
+//import org.h2.tools.Console;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
@@ -12,9 +12,6 @@ import otus.springfreamwork.homework_lecture6.domain.repositories.AuthorDAO;
 import otus.springfreamwork.homework_lecture6.domain.repositories.BookDAO;
 import otus.springfreamwork.homework_lecture6.domain.repositories.GenreDAO;
 
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 @ShellComponent
@@ -173,9 +170,9 @@ public class ShellCommands {
         return "Книга удалена";
     }
 
-    @ShellMethod("console")
-    public void console() throws SQLException {
-        Console.main(new String[]{});
-    }
+//    @ShellMethod("console")
+//    public void console() throws SQLException {
+//        Console.main(new String[]{});
+//    }
 
 }
